@@ -7,5 +7,9 @@ public class Main {
             System.out.println(Challenge.recursiveFibonacci(i));
         }
 
+        Song music = new Song();
+        music.setTitle("The Long and Winding Road");
+        music.setArtist("The Beatles");
+        System.out.println(music.play());
     }
 }
