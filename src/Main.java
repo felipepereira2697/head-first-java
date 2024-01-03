@@ -11,5 +11,8 @@ public class Main {
         music.setTitle("The Long and Winding Road");
         music.setArtist("The Beatles");
         System.out.println(music.play());
+
+        TestPerformanceCollections.testArrayListPerformance(200000, "HS");
+        TestPerformanceCollections.testArrayListPerformance(200000, "AL");
     }
 }
