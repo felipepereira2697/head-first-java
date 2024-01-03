@@ -12,8 +12,10 @@ public class Main {
         music.setArtist("The Beatles");
         System.out.println(music.play());
 
-        TestPerformanceCollections.testArrayListPerformance(200000, "HS");
-        TestPerformanceCollections.testArrayListPerformance(200000, "AL");
-        TestPerformanceCollections.testArrayListPerformance(200000, "");
+        LearningComparator.checkComparator();
+        TestPerformanceCollections.testArrayListPerformance(20000, "HS");
+        TestPerformanceCollections.testArrayListPerformance(20000, "AL");
+        TestPerformanceCollections.testArrayListPerformance(20, "");
+
     }
 }
