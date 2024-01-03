@@ -1,5 +1,7 @@
+import java.io.*;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Challenge.bottleChallenge();
 
         int n = 10 ;
@@ -17,6 +19,8 @@ public class Main {
         TestPerformanceCollections.testArrayListPerformance(20000, "AL");
         TestPerformanceCollections.testArrayListPerformance(20, "");
         LearningComparator.checkComparatorWithLambda();
+
+        TestFile.readFile("src\\text.txt");
 
     }
 }
