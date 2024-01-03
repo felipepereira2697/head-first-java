@@ -21,6 +21,8 @@ public class Main {
         LearningComparator.checkComparatorWithLambda();
 
         TestFile.readFile("src\\text.txt");
+        TestFile.writeFile();
+        TestFile.readFile("src\\text.txt");
 
     }
 }

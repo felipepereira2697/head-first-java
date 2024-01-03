@@ -1,9 +1,1 @@
-This is a file to be read
-Lets see how it goes
-nice and nice
-We need InputStream
-FileInputStream
-InputStreamReader
-Buffered Read
-Reading some nice text over here!
-Uhuuuu
+test26

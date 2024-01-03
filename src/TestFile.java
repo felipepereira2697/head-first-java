@@ -19,4 +19,18 @@ public class TestFile {
         }
 
     }
+
+    public static void writeFile() {
+
+        try {
+            OutputStream os = new FileOutputStream("src//text.txt");
+            OutputStreamWriter osw = new OutputStreamWriter(os);
+            BufferedWriter bw = new BufferedWriter(osw);
+            bw.write("test26");
+            bw.close();
+        }catch (IOException io) {
+            System.out.println(io.getMessage());
+        }
+
+    }
 }
