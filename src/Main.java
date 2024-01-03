@@ -14,5 +14,6 @@ public class Main {
 
         TestPerformanceCollections.testArrayListPerformance(200000, "HS");
         TestPerformanceCollections.testArrayListPerformance(200000, "AL");
+        TestPerformanceCollections.testArrayListPerformance(200000, "");
     }
 }

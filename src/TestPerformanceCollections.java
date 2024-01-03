@@ -6,7 +6,7 @@ public class TestPerformanceCollections {
 
     public static void testArrayListPerformance(int n, String collectionType) {
         System.out.println("Starting...");
-//        Instantiating this way it's nice because we can use polimorphism and depending on the parameter
+//        Instantiating this way it's nice because we can use polimorphism and depending on the parameter.
 //        we can use the same variable to instantiate different types of Collections
 //        Here what makes difference between implementations is the searching
 //        Searching takes a lot more time on ArrayList in comparison of HashSets.
