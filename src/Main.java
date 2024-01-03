@@ -16,6 +16,7 @@ public class Main {
         TestPerformanceCollections.testArrayListPerformance(20000, "HS");
         TestPerformanceCollections.testArrayListPerformance(20000, "AL");
         TestPerformanceCollections.testArrayListPerformance(20, "");
+        LearningComparator.checkComparatorWithLambda();
 
     }
 }

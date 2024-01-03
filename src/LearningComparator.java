@@ -25,8 +25,20 @@ public class LearningComparator {
         names.sort(comparator);
         System.out.println(names);
 
+    }
 
+    public static void checkComparatorWithLambda() {
+        List<String> names = new ArrayList<>();
+        names.add("Arya Stark of Winterfell");
+        names.add("Jon Snow");
+        names.add("Daenerys Targaryen");
+        names.add("Ned Stark");
+        names.add("Tyrion Lannister");
+        names.add("Aegon Targaryen");
+        names.add("Khal Drogo");
+        names.add("Batatinha");
 
-
+        names.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+        names.forEach(System.out::println);
     }
 }
