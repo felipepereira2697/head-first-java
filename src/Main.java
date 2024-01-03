@@ -26,6 +26,20 @@ public class Main {
         System.out.println("Using Print Stream");
         TestFile.readFromInputUserSaveFile(filename);
 
+        TestThread p1 = new TestThread();
+        p1.setId(1);
+
+        Thread t1 = new Thread(p1);
+        t1.start();
+
+        TestThread p2 = new TestThread();
+        p1.setId(2);
+
+        Thread t2 = new Thread(p2);
+        t2.start();
+
+
+
 
     }
 }
