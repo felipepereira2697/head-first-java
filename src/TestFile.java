@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class TestFile {
 
@@ -27,9 +28,22 @@ public class TestFile {
             OutputStreamWriter osw = new OutputStreamWriter(os);
             BufferedWriter bw = new BufferedWriter(osw);
             bw.write("test26");
+            bw.newLine();
+            bw.write("testing");
             bw.close();
         }catch (IOException io) {
             System.out.println(io.getMessage());
+        }
+
+    }
+
+
+    public static void readFromInputUserSaveFile(String filename) throws FileNotFoundException {
+        //Waits on user inputs and after program finishes it saves in the text2.txt file
+        Scanner s = new Scanner(System.in);
+        PrintStream ps = new PrintStream("text2.txt");
+        while (s.hasNextLine()) {
+            ps.println(s.nextLine());
         }
 
     }

@@ -20,9 +20,12 @@ public class Main {
         TestPerformanceCollections.testArrayListPerformance(20, "");
         LearningComparator.checkComparatorWithLambda();
 
-        TestFile.readFile("src\\text.txt");
+        String filename ="src\\text.txt";
+        TestFile.readFile(filename);
         TestFile.writeFile();
-        TestFile.readFile("src\\text.txt");
+        System.out.println("Using Print Stream");
+        TestFile.readFromInputUserSaveFile(filename);
+
 
     }
 }
