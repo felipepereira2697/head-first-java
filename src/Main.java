@@ -38,8 +38,11 @@ public class Main {
 //        Thread t2 = new Thread(p2);
 //        t2.start();
         //Ideally we should have another program to play the Client
-        SocketServer.startServer();
+        //SocketServer.startServer();
         //SocketClient.startClient();
 
+        GuessGame game = new GuessGame();
+        game.startGame();
+        //game.getP1().guess();
     }
 }
