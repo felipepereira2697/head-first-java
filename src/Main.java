@@ -43,6 +43,6 @@ public class Main {
 
         GuessGame game = new GuessGame();
         game.startGame();
-        //game.getP1().guess();
+
     }
 }

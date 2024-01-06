@@ -39,7 +39,7 @@ public class GuessGame {
             }
 
             if(p1Right || p2Right || p3Right) {
-                System.out.println("We have a winner!!!! ");
+                System.out.println("Wow!!! We have a winner!!!! ");
                 System.out.println(p1.getName() + " has nailed or not? "+p1Right);
                 System.out.println(p2.getName() + " has nailed or not? "+p2Right);
                 System.out.println(p3.getName() + " has nailed or not? "+p3Right);
