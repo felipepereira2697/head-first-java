@@ -41,8 +41,10 @@ public class Main {
         //SocketServer.startServer();
         //SocketClient.startClient();
 
-        GuessGame game = new GuessGame();
-        game.startGame();
+        //GuessGame game = new GuessGame();
+        //game.startGame();
+
+        DateTimeUpdates.samplePeriod();
 
     }
 }

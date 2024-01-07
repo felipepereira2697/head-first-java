@@ -1,13 +1,14 @@
 import java.time.*;
 import java.time.temporal.TemporalAdjusters;
+import java.util.Set;
 
 public class DateTimeUpdates {
 
 
     public static void localDateSample() {
-        LocalDate localDate = new LocalDate.now();
-        LocalDate d20230626 = new LocalDate.of(2023, 06, 26);
-        LocalDate fromString = new LocalDate.parse("2023-06-26");
+        LocalDate localDate =  LocalDate.now();
+        LocalDate d20230626 =  LocalDate.of(2023, 06, 26);
+        LocalDate fromString = LocalDate.parse("2023-06-26");
 
         boolean leapYear = localDate.isLeapYear();
         boolean isBefore = localDate.isBefore(d20230626);
@@ -20,7 +21,7 @@ public class DateTimeUpdates {
     }
 
     public static void localTimeSample() {
-        LocalTime localTime = new LocalTime.now();
+        LocalTime localTime = LocalTime.now();
         LocalTime sevenThirty = LocalTime.of(7,30);
         LocalTime nineThirty = sevenThirty.plusHours(2);
         boolean isBefore = sevenThirty.isBefore(nineThirty);
@@ -44,6 +45,17 @@ public class DateTimeUpdates {
         ZoneOffset offset = ZoneOffset.of("+02:00");
 
         OffsetDateTime offSetByTwo = OffsetDateTime.of(localDateTime, offset);
+    }
 
+    public static void samplePeriod() {
+        LocalDate startOfJune = LocalDate.of(2023,Month.JUNE, 1);
+        LocalDate endOfJune = LocalDate.of(2023, Month.JUNE, 30);
+        LocalDate endOfFeb = LocalDate.of(2023, Month.FEBRUARY, 1);
+        //Get Period of days
+        int days = Period.between(startOfJune, endOfJune).getDays();
+        int months = Period.between(startOfJune, endOfFeb).getMonths();
+
+        System.out.println("Days --> "+days);
+        System.out.println("Months --> "+months);
     }
 }
