@@ -7,7 +7,7 @@ public class DateTimeUpdates {
 
     public static void localDateSample() {
         LocalDate localDate =  LocalDate.now();
-        LocalDate d20230626 =  LocalDate.of(2023, 06, 26);
+        LocalDate d20230626 =  LocalDate.of(2023, 6, 26);
         LocalDate fromString = LocalDate.parse("2023-06-26");
 
         boolean leapYear = localDate.isLeapYear();
@@ -37,6 +37,7 @@ public class DateTimeUpdates {
     public static void zoneIdSample() {
         ZoneId zoneId = ZoneId.of("Europe/Lisbon");
         Set<String> allZoneIds = ZoneId.getAvailableZoneIds();
+        allZoneIds.forEach(System.out::println);
         ZonedDateTime zonedDateTime = ZonedDateTime.of(LocalDateTime.now(), zoneId);
         ZonedDateTime parsed = ZonedDateTime.parse("2023-06-26T20:00:00+01:00[Europe/Lisbon]");
 

@@ -45,6 +45,7 @@ public class Main {
         //game.startGame();
 
         DateTimeUpdates.samplePeriod();
+        DateTimeUpdates.zoneIdSample();
 
     }
 }
