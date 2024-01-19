@@ -1,12 +1,13 @@
 public class Song {
 
-//    Instance variables: things the object KNOWS
+    //    Instance variables: things the object KNOWS
     private String title;
     private String artist;
 
     public Song(){
 
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -16,6 +17,7 @@ public class Song {
         this.artist = artist;
     }
 
+    //    Things that an object DOES
     public String play() {
         return "Now playing "+this.title+" from "+this.artist;
     }
