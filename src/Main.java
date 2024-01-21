@@ -8,12 +8,6 @@ public class Main {
         for (int i = 0; i < n ; i++) {
             System.out.println(Challenge.recursiveFibonacci(i));
         }
-
-        Song music = new Song();
-        music.setTitle("The Long and Winding Road");
-        music.setArtist("The Beatles");
-        System.out.println(music.play());
-
 //        LearningComparator.checkComparator();
 //        TestPerformanceCollections.testArrayListPerformance(20000, "HS");
 //        TestPerformanceCollections.testArrayListPerformance(20000, "AL");
