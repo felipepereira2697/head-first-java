@@ -7,6 +7,7 @@ public class SongMainClass {
         am.setTitle("505");
         System.out.println(am.play());
 
+
     }
 
 }

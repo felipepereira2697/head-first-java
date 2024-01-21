@@ -21,4 +21,7 @@ public class Song {
     public String play() {
         return "Now playing "+this.title+" from "+this.artist;
     }
+    public String getTitle() {
+        return this.title;
+    }
 }
