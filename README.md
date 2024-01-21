@@ -1,4 +1,4 @@
-﻿<h1 align="center"> Head First Java ☕ 🤔 🧠 </h1>
+﻿<h1 align="center"> Head First Java ☕ 🧠 🤔 </h1>
 
 # :hammer: Project functionality
 
